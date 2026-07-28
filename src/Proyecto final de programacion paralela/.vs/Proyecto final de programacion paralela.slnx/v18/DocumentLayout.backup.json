@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kalil Camilo\\Documents\\GitHub\\Proyecto-final-de-programaci-n-paralela\\Proyecto final de programacion paralela\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A85CC8BA-5B23-4ED1-AD9B-7731364E4CAB}|Proyecto final de programacion paralela\\Proyecto final de programacion paralela.csproj|c:\\users\\kalil camilo\\documents\\github\\proyecto-final-de-programaci-n-paralela\\proyecto final de programacion paralela\\proyecto final de programacion paralela\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A85CC8BA-5B23-4ED1-AD9B-7731364E4CAB}|Proyecto final de programacion paralela\\Proyecto final de programacion paralela.csproj|solutionrelative:proyecto final de programacion paralela\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kalil Camilo\\Documents\\GitHub\\Proyecto-final-de-programaci-n-paralela\\Proyecto final de programacion paralela\\Proyecto final de programacion paralela\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto final de programacion paralela\\Program.cs",
+              "ToolTip": "C:\\Users\\Kalil Camilo\\Documents\\GitHub\\Proyecto-final-de-programaci-n-paralela\\Proyecto final de programacion paralela\\Proyecto final de programacion paralela\\Program.cs",
+              "RelativeToolTip": "Proyecto final de programacion paralela\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T21:25:06.988Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
