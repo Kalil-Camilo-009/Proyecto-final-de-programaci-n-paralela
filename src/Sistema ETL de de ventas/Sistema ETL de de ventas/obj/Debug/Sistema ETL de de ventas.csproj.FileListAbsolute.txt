@@ -1,0 +1,7 @@
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\bin\Debug\Sistema ETL de de ventas.exe.config
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\bin\Debug\Sistema ETL de de ventas.exe
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\bin\Debug\Sistema ETL de de ventas.pdb
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\obj\Debug\Sistema ETL de de ventas.csproj.AssemblyReference.cache
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\obj\Debug\Sistema ETL de de ventas.csproj.CoreCompileInputs.cache
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\obj\Debug\Sistema ETL de de ventas.exe
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\src\Sistema ETL de de ventas\Sistema ETL de de ventas\obj\Debug\Sistema ETL de de ventas.pdb
