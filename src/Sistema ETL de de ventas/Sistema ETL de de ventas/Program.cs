@@ -10,7 +10,7 @@ namespace Sistema_ETL_de_de_ventas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Estamos comenzado a trabajar en el sistema ETL new RD");
+            Console.WriteLine("Estamos comenzado a trabajar en el sistema ETL new RD klk funciona ya, bobo");
         }
     }
 }
