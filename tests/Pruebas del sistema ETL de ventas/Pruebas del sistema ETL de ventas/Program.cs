@@ -175,3 +175,73 @@ namespace Pruebas_del_sistema_ETL_de_ventas
                         for (int i = start; i < end; i++) sum += datos[i].MontoBase * 1.18;
                         return sum;
                     });
+                }
+                double[] resTasks = await Task.WhenAll(tasks);
+                double totalTasks = resTasks.Sum();
+                swTasks.Stop();
+                long tTasks = swTasks.ElapsedMilliseconds;
+
+                // 4. Ejecución con Threads Nativos
+                Stopwatch swThreads = Stopwatch.StartNew();
+                double[] resThreads = new double[maxProcessors];
+                Thread[] threads = new Thread[maxProcessors];
+                for (int t = 0; t < maxProcessors; t++)
+                {
+                    int threadIndex = t;
+                    int start = threadIndex * chunkSize;
+                    int end = (threadIndex == maxProcessors - 1) ? N : (threadIndex + 1) * chunkSize;
+                    threads[threadIndex] = new Thread(() =>
+                    {
+                        double sum = 0;
+                        for (int i = start; i < end; i++) sum += datos[i].MontoBase * 1.18;
+                        resThreads[threadIndex] = sum;
+                    });
+                    threads[threadIndex].Start();
+                }
+                foreach (var th in threads) th.Join();
+                double totalThreads = resThreads.Sum();
+                swThreads.Stop();
+                long tThreads = swThreads.ElapsedMilliseconds;
+
+                // Presentación de métricas de telemetría
+                Console.WriteLine("\n==========================================================");
+                Console.WriteLine("                TABLA RECAPITULATIVA DE PRUEBAS            ");
+                Console.WriteLine("==========================================================");
+                Console.WriteLine($"Tiempo Secuencial: {tSec} ms");
+
+                ImprimirMetrica("Parallel.For", tSec, tParallel, maxProcessors, Math.Abs(totalSecuencial - totalParallel) < 1e-4);
+                ImprimirMetrica("Tasks (TPL)", tSec, tTasks, maxProcessors, Math.Abs(totalSecuencial - totalTasks) < 1e-4);
+                ImprimirMetrica("Threads", tSec, tThreads, maxProcessors, Math.Abs(totalSecuencial - totalThreads) < 1e-4);
+            }
+
+            private void ImprimirMetrica(string metodo, long tSec, long tPar, int procesadores, bool coincide)
+            {
+                double speedup = tPar > 0 ? (double)tSec / tPar : 0;
+                double eficiencia = (speedup / procesadores) * 100;
+                Console.WriteLine($"\nMétodo: {metodo}");
+                Console.WriteLine($"  Tiempo: {tPar} ms");
+                Console.WriteLine($"  Speedup: {speedup:F2}x");
+                Console.WriteLine($"  Eficiencia: {eficiencia:F2}%");
+                Console.WriteLine($"  Resultados coinciden: {coincide}");
+            }
+        }
+
+        // Generador auxiliar de registros de prueba
+        private static VentaTest[] GenerarDatos(int cantidad)
+        {
+            string[] sucursales = { "Santo Domingo", "Santiago", "La Vega", "Puerto Plata" };
+            Random rnd = new Random(42); // Semilla fija para consistencia en pruebas
+            VentaTest[] datos = new VentaTest[cantidad];
+            for (int i = 0; i < cantidad; i++)
+            {
+                datos[i] = new VentaTest
+                {
+                    Id = i + 1,
+                    Sucursal = sucursales[i % sucursales.Length],
+                    MontoBase = rnd.Next(100, 5000)
+                };
+            }
+            return datos;
+        }
+    }
+}
