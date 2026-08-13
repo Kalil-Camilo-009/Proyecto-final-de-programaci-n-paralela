@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_ETL_de_de_ventas
 {
+    // Modelo de la entidad de venta para la simulación masiva
     public class Venta
     {
         public int Id { get; set; }
@@ -46,6 +47,7 @@ namespace Sistema_ETL_de_de_ventas
             double totalSecuencial = 0;
             double totalParalelo = 0;
 
+            // --- MEDICIÓN SECUENCIAL ---
             Stopwatch swSec = Stopwatch.StartNew();
             for (int i = 0; i < dataset.Length; i++)
             {
@@ -54,10 +56,12 @@ namespace Sistema_ETL_de_de_ventas
             }
             swSec.Stop();
 
+            // --- MEDICIÓN PARALELA (Descomposición de Datos de Entrada por Bloques) ---
             Stopwatch swPar = Stopwatch.StartNew();
             totalParalelo = await ProcesarETLDescomposicionDatos(dataset, numProcesadores);
             swPar.Stop();
 
+            // --- CÁLCULO DE MÉTRICAS ---
             long tSec = swSec.ElapsedMilliseconds;
             long tPar = swPar.ElapsedMilliseconds;
 
@@ -79,6 +83,7 @@ namespace Sistema_ETL_de_de_ventas
             Console.ReadKey();
         }
 
+        // Método de Descomposición de Datos (Particionamiento por Bloques / Chunks)
         private static async Task<double> ProcesarETLDescomposicionDatos(Venta[] ventas, int numProcesadores)
         {
             int numBloques = numProcesadores;
@@ -109,6 +114,7 @@ namespace Sistema_ETL_de_de_ventas
             return sumasParciales.Sum();
         }
 
+        // Generador sintético de ventas multisucursal en memoria
         private static Venta[] GenerarVentasSinteticas(int cantidad)
         {
             string[] sucursales = { "Santo Domingo", "Santiago", "La Vega", "Puerto Plata" };
