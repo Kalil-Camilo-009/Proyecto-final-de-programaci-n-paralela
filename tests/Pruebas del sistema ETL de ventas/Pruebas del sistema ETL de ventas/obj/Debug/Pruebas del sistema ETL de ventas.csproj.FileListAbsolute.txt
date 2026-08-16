@@ -1,0 +1,7 @@
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\bin\Debug\Pruebas del sistema ETL de ventas.exe.config
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\bin\Debug\Pruebas del sistema ETL de ventas.exe
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\bin\Debug\Pruebas del sistema ETL de ventas.pdb
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\obj\Debug\Pruebas del sistema ETL de ventas.csproj.AssemblyReference.cache
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\obj\Debug\Pruebas del sistema ETL de ventas.csproj.CoreCompileInputs.cache
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\obj\Debug\Pruebas del sistema ETL de ventas.exe
+C:\Users\Kalil Camilo\Documents\GitHub\Proyecto-final-de-programaci-n-paralela\tests\Pruebas del sistema ETL de ventas\Pruebas del sistema ETL de ventas\obj\Debug\Pruebas del sistema ETL de ventas.pdb

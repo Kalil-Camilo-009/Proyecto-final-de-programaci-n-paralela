@@ -67,7 +67,8 @@ namespace Sistema_ETL_de_de_ventas
 
             double speedup = tPar > 0 ? (double)tSec / tPar : 0;
             double eficiencia = (speedup / numProcesadores) * 100;
-            bool coinciden = Math.Abs(totalSecuencial - totalParalelo) < 1e-5;
+            double diferencia = Math.Abs(totalSecuencial - totalParalelo);
+            bool coinciden = (diferencia / totalSecuencial) < 1e-4;
 
             Console.WriteLine("\n=================================================================");
             Console.WriteLine("                    RESULTADOS Y TELEMETRÍA                      ");

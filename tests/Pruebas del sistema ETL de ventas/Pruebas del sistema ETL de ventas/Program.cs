@@ -31,8 +31,8 @@ namespace Pruebas_del_sistema_ETL_de_ventas
 
             // Para cambiar de prueba, simplemente instanciar la clase deseada:
             // -----------------------------------------------------------------
-            // IOperation operacion = new PruebasETL.Prueba1_ParticionamientoSalida_ParallelFor();
-            // IOperation operacion = new PruebasETL.Prueba2_ParticionamientoEntrada_GranoGruesoMIMD();
+             //IOperation operacion = new PruebasETL.Prueba1_ParticionamientoSalida_ParallelFor();
+            //IOperation operacion = new PruebasETL.Prueba2_ParticionamientoEntrada_GranoGruesoMIMD();
             IOperation operacion = new PruebasETL.Prueba3_BenchmarkingMultiMetodo_Speedup();
 
             await operacion.Iniciar();
