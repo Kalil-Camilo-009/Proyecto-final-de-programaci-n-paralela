@@ -203,7 +203,7 @@ namespace Pruebas_del_sistema_ETL_de_ventas
                 swThreads.Stop();
                 long tThreads = swThreads.ElapsedMilliseconds;
 
-                // Presentación de métricas de telemetría
+                // Presentación de métricas
                 Console.WriteLine("\n==========================================================");
                 Console.WriteLine("                TABLA RECAPITULATIVA DE PRUEBAS            ");
                 Console.WriteLine("==========================================================");
