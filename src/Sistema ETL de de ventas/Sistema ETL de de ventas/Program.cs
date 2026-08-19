@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_ETL_de_de_ventas
 {
-    // Modelo de la entidad de venta para la simulación masiva
+    // Modelo de la entidad de venta para la simulación masiva RANNIEL
     public class Venta
     {
         public int Id { get; set; }
